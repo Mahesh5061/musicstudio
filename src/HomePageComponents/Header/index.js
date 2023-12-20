@@ -1,19 +1,24 @@
 import React from 'react';
-import { Link} from 'react';
+import { Component } from 'react';
+import {FaAngleLeft, FaAngleRight, FaBars} from "react-icons/fa"
 import "../Header/index.css";
 
-function Header(){
+class Header extends Component{
+  render(){
     return(
-        <header>
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
+        <div class="circle">
+          <FaAngleLeft/>
+        </div>
+        <div class="circle">
+          <FaBars/>
+        </div>
+        <div class="circle">
+          <FaAngleRight/>
+        </div>
       </nav>
-    </header>
     )
-};
+  }
+}
 
 export default Header;
