@@ -1,10 +1,14 @@
 // App.js
 import React from 'react';
-import Home from './HomePageComponents/Home';
+import PlaySound from './HomePageComponents/PlaySound';
+import "./App.css"
 
 const App = () => {
   return (
-   <Home/>
+<div class="main-page">
+   <PlaySound />
+   <PlaySound />
+</div>
   );
 };
 
